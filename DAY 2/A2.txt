@@ -1,0 +1,66 @@
+STRING METHODS:-
+
+String Length:
+The length property returns the length of a string.
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+String Index:
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string.
+var pos = str.indexOf("D");
+
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string.
+var pos = str.lastIndexOf("S");
+
+Searching for a String:
+The search() method searches a string for a specified value and returns the position of the match.
+var str = "Hey Its Me";
+var pos = str.search("Me");
+
+slicing:
+slice() extracts a part of a string and returns the extracted part in a new string.
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+
+substring():
+substring() is similar to slice() but substring() cannot accept negative indexes.
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7, 13);
+
+Replacing
+The replace() method replaces a specified value with another value in a string.
+str = "Hey its Me";
+var n = str.replace("Me", "Him");
+
+==================================================================================================================================
+ARRAY METHODS :-
+
+Popping:
+The pop() method removes the last element from an array.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop(); 
+
+Pushing:
+The push() method adds a new element to an array at the end of array.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");
+
+Shifting Elements:
+Shifting is equivalent to popping, working on the first element instead of the last.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+
+Deleting Elements:
+Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0]; 
+
+Splicing:
+The splice() method can be used to add new items to an array.
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+Merging Array
+The concat() method creates a new array by merging (concatenating) existing arrays.
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var myChildren = myGirls.concat(myBoys)
