@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quotes</title>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style> 
+            #bottom { 
+                position:absolute;                  
+                bottom:0;                          
+                right:0;                          
+            } 
+        </style> 
+</head>
+<body id="bgcolor">
+  <div class="container">
+    <div id="quote-box">
+      <p class="quote">You can do anything but not everything</p>
+      <p class="source">David Allen<span class="citation">Making It All Work</span><span class="year">2009</span></p>
+    </div>
+    <button id="loadQuote">CLICK TO SHOW NEW QUOTE</button>
+  </div>
+  <script src="js/script.js"></script>
+  <script>
+    setInterval(printQuote, 5000);
+  </script>
+  <div id="bottom">Made By TuFeL</div> 
+</body>
+</html>
